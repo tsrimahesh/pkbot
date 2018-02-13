@@ -10,5 +10,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-thank-you",
-  "hubot-where-am-i"
+  "hubot-where-am-i",
+  "hubot-simple-greeting"
 ]
