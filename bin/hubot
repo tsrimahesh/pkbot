@@ -7,4 +7,4 @@ npm install
 
 #exec node_modules/.bin/hubot --name "pkbot" "$@"
 export PATH="/home/pkbot/pkbot/node_modules/hubot/bin:$PATH"
-exec hubot --name "pkbot" "$@
+exec hubot --name "pkbot" "$@"
