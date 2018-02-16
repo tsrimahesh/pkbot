@@ -16,7 +16,7 @@
       stage ('Deploy') {
 
 		          sh 'ssh -p2244 pkbot@pkbotnode rm -rf /home/pkbot/pkbot'
-              sh 'ssh -p2244 pkbot@pkbotnode git clone https://github.com/tsrimahesh/pkbot.git'
+              sh 'ssh -p2244 pkbot@pkbotnode git clone -b dev https://github.com/tsrimahesh/pkbot.git'
 					  	sh 'ssh -p2244 pkbot@pkbotnode "cd /home/pkbot/pkbot && npm install hubot-slack --save"'
 							sh 'ssh -p2244 pkbot@pkbotnode export HUBOT_ADAPTER=slack'
 					    sh 'ssh -p2244 pkbot@pkbotnode export HUBOT_SLACK_TOKEN=xoxb-316277351014-4hTDsK3Om2TUOxRhuOa8Jnrd'
